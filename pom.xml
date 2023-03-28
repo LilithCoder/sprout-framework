@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- 基本配置 -->
+    <groupId>com.sproutframework</groupId>
+    <artifactId>sproutframework</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+<!--    <packaging>jar</packaging>-->
+
+    <!-- 依赖配置 -->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+    </dependencies>
+
+    <!-- 常量配置 -->
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <build>
+        <!-- 不配置 resources 的话 maven 打包后配置文件不会放到 target 目录下 -->
+        <resources>
+            <resource>
+                <directory>resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+            </resource>
+        </resources>
+    </build>
+</project>
